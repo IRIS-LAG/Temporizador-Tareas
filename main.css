@@ -1,0 +1,111 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+    --colorPrimario:rgb(40, 94, 141, 0.8);
+    --colorSecundario:rgb(40, 94, 141);
+}
+html    {
+    background-color: var(--colorPrimario);
+}
+#app    {
+    background-color: white;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px 3px rgb(70, 69, 69, 0.7);
+}
+#time   {
+    margin: 15px 20px;
+    font-size: 2.8em;
+    text-align: center;
+    font-weight: bold;
+}
+#taskName   {
+    text-transform: uppercase;
+    font-size: 0.5em; 
+    color: gray;
+}
+/*------------------------------------*/
+.tasks-container    {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+#form   {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+input   {
+    font-size: 1.2em;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: none;
+}
+#itTask {
+    /*color: var(--colorPrimario);*/
+    border: 2px solid var(--colorPrimario);
+    outline: none;
+    flex: 1;
+}
+#bOdd {
+    background-color: var(--colorSecundario);
+    color: white;
+}
+/*------------------------------------*/
+.task {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--colorPrimario);
+}
+.start-button {
+    background-color: var(--colorPrimario);
+    color: white;
+    font-size: 0.9em;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    width: 130px;
+}
+.title  {
+    flex: 1;
+}
+.drop-button {
+    background-color: var(--colorPrimario);
+    color: white;
+    padding: 7px 10px;
+    border-radius: 50%;
+    border: none;
+    width: 30px;
+    height: 30px;
+}
+.done {
+    background-color: rgb(124, 118, 118); /* var(--colorSecundario);*/
+    color: white;
+    font-size: 0.9em;
+    padding: 10px 20px;
+    border-radius: 6px;
+    width: 130px;
+    display: inline-block;
+    text-align: center;
+}
+/*------------------------------------*/
+.pies   {
+    position: absolute;
+    top: 88%;
+    left: 20px;
+    color: white;
+    font-size: 0.8em;
+}
